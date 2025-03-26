@@ -7,17 +7,17 @@
 
   "checkout": {
     "full_name": "Sample Tester",
-    "address_line": "GULSN",
-    "address_line2": "N LP",
-    "city": "GH Pi",
-    "state": "BH",
-    "zip_code": "52145",
-    "country": "ITL"
+    "address_line": "F-201, 1st Floor",
+    "address_line2": "28, Main Road, 3rd Block, Gulshan-2",
+    "city": "Dhaka",
+    "state": "Dhaka",
+    "zip_code": "1205",
+    "country": "Bangladesh"
   },
 
 
   "payment": {
-    "full_name": "John Doe",
+    "full_name": "Sample Tester",
     "card_number": "704054247867",
     "expiration_date": "0329",
     "security_code": "886"
