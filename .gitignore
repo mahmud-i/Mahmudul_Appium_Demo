@@ -1,0 +1,17 @@
+# Allow .gitignore file to be tracked
+!.gitignore
+
+# Ignore reports directory at any level
+**/reports/
+**/results/
+
+# Ignore backup or temporary files ending with a tilde (~)
+*~
+
+# Ignore PyCharm project settings
+.idea/
+
+# Ignore Python cache files
+__pycache__/
+*.pyc
+*.pyo

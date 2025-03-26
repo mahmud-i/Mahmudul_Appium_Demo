@@ -1,0 +1,25 @@
+{
+  "login": {
+    "email": "bob@example.com",
+    "password": "10203040"
+  },
+
+
+  "checkout": {
+    "full_name": "Sample Tester",
+    "address_line": "GULSN",
+    "address_line2": "N LP",
+    "city": "GH Pi",
+    "state": "BH",
+    "zip_code": "52145",
+    "country": "ITL"
+  },
+
+
+  "payment": {
+    "full_name": "John Doe",
+    "card_number": "704054247867",
+    "expiration_date": "0329",
+    "security_code": "886"
+  }
+}
