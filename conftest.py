@@ -15,6 +15,21 @@ from pages.payment_page import PaymentPage
 from pages.review_order_page import ReviewOrderPage
 
 
+def clear_directory(directory):
+    """Clear the contents of the given directory."""
+    if os.path.exists(directory):
+        # Remove all files and subdirectories in the directory
+        shutil.rmtree(directory)
+    os.makedirs(directory)
+
+
+def pytest_sessionstart(session):
+    """Clear directories before the test session starts."""
+
+    # Clear previous allure-results and allure-report directories
+    clear_directory("reports/allure-results")
+    clear_directory("reports/allure-report")
+
 
 @pytest.fixture(scope="session")
 def test_data():
@@ -89,4 +104,4 @@ def setup(request):
 def pytest_sessionfinish(session, exitstatus):
     """Generate Allure reports automatically after test run"""
     # Generate Allure report
-    os.system("allure generate reports/allure-results -o results/allure-report --clean")
+    os.system("allure generate reports/allure-results -o reports/allure-report --clean")
